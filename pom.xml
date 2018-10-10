@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.b2mark.service.discovery</groupId>
-	<artifactId>b2mark-service-discovery</artifactId>
+	<artifactId>servicovery</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
