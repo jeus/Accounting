@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka
+    name: service-discovery
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://87.98.188.77:8888
