@@ -2,16 +2,22 @@ server:
   port: 8761 # Indicate the default PORT where this service will be started
   ssl:
     enabled: true
-    key-store: classpath:eureka.jks
-    key-store-password: hpf9$A3FTN
-    trust-store: classpath:eureka.jks
-    trust-store-password: hpf9$A3FTN
+    key-store: classpath:myeureka.jks
+    key-store-password: A123456b
+    trust-store-password: A123456b
     key-alias: eureka
+    key-store-type: PKCS12
+
 
 
 eureka:
+  instance:
+    hostname: localhost
   client:
     registerWithEureka: false	#telling the server not to register himself in the service registry
+    serviceUrl:
+      defaultZone: https://${eureka.instance.hostname}:${server.port}/eureka/
     fetchRegistry: false
   server:
-    waitTimeInMsWhenSyncEmpty: 0	#wait time for subsequent sync
+    waitTimeInMsWhenSyncEmpty: 0 #wait time for subsequent sync
+    eviction-interval-timer-in-ms: 1000

@@ -3,4 +3,4 @@ spring:
     name: service-discovery
   cloud:
     config:
-      uri: http://87.98.188.77:8888
+      uri: http://87.98.188.74:8888
