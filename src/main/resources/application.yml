@@ -12,3 +12,9 @@ eureka:
   server:
     waitTimeInMsWhenSyncEmpty: 0 #wait time for subsequent sync
     eviction-interval-timer-in-ms: 1000
+
+application:
+  clients:
+    - username: discovery
+      password: becopaydiscovery1234
+      roles: client
